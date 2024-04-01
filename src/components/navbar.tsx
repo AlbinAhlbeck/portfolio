@@ -24,7 +24,7 @@ const Navbar = () => {
     const menuItems = [
         { text: "Home", description: "Go back to the home page", link: "/" },
         { text: "Projects", description: "Look closer on projects that I have worked on", link: "/projects" },
-        { text: "Work and education", description: "My work and education background", link: "/work" },
+        // // { text: "Work and education", description: "My work and education background", link: "/work" }, TODO
     ];
 
     return (
