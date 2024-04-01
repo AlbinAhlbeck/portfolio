@@ -7,7 +7,7 @@ import Hover from '../components/hover'
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [navHeight, setNavHeight] = useState(0);
-    const menuRef = useRef(null);
+    const menuRef = useRef<HTMLDivElement>(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -18,7 +18,7 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        setNavHeight(isOpen ? menuRef.current?.scrollHeight : 0);
+        setNavHeight(isOpen && menuRef.current ? menuRef.current.scrollHeight : 0);
     }, [isOpen]);
 
     const menuItems = [
