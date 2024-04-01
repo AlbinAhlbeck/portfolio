@@ -9,7 +9,7 @@ type HeroProps = {
 
 const Hero = ({ children, role, description }: HeroProps) => {
     return (
-        <div className="bg-card-foreground mx-auto border border-gray-600 p-5 rounded-sm min-w-min flex items-center border-bottom text-gray-100">
+        <div className="bg-card-foreground mx-auto border border-gray-600 p-5 rounded-sm min-w-min flex items-center border-bottom text-gray-100 max-w-5xl">
             <div>
                 {React.Children.map(children, (child) => (
                     <h2 className="text-5xl mb-5">

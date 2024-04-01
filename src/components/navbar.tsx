@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Hover from '../components/hover'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
     const menuItems = [
         { text: "Home", description: "Go back to the home page", link: "/" },
         { text: "Projects", description: "Look closer on projects that I have worked on", link: "/projects" },
-        { text: "Work", description: "My work experience timeline", link: "/work" },
+        { text: "Work and education", description: "My work and education background", link: "/work" },
     ];
 
     return (
@@ -45,7 +46,7 @@ const Navbar = () => {
                                 <span>{isOpen ? '▲' : '▼'}</span>
                             </li>
                         </ul>
-                        <button>Contact me</button>
+                        <Hover message="albin.ahlbeck@gmail.com">Contact me</Hover>
                     </div>
 
                     <AnimatePresence>
@@ -55,10 +56,10 @@ const Navbar = () => {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.2 }}
-                                className="text-white py-8 px-4 text-4xl"
+                                className="text-white py-8 px-4 text-xl lg:text-3xl"
                                 ref={menuRef}
                             >
-                                <div className="flex flex-col gap-8 w-fit min-h-fit">
+                                <div className="flex flex-col gap-8 w-fit min-h-full">
                                     {menuItems.map((item, index) => (
                                         <Link href={item.link} key={index}>
                                             <motion.li

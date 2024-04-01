@@ -14,7 +14,7 @@
       "description": "Site with services like My Pages, Selfservice and also IoT integrations with parking sensors and water temperature. Built to be flexible for the customer with the help of Optimizely CMS"
     },
     {
-      "link": "/test",
+      "link": "/ssvs",
       "title": "Cooperation Southwestern Skåne",
       "topInfo": "Tietoevry",
       "badges": ["Next.js", "Strapi CMS", "Github Actions"],

@@ -9,16 +9,16 @@ import {
     return (
       <main className="min-h-screen bg-zinc-950 text-gray-100 pt-12 font-mono">
         <div className="flex flex-col items-center min-w-fit">
-          <h1 className="text-2xl mb-8">Vellinge</h1>
-          <p className="mx-8 max-w-4xl">This project had many external integrations as well a in-house custom form tools that I worked with. It used .NET MVC Pages so I had the chance to work a lot with HTML. This is what later made me want to dive deeper into frontend development</p>
+          <h1 className="text-2xl mb-8">Cooperation Southwestern Skåne</h1>
+          <p className="mx-8 max-w-4xl">This is the project where I learned Next.js and React.js. I had not previously worked with these frameworks. But me and my manager were confident it would not be a problem. We delivered great quality on a tight deadline and the customer was delighted.</p>
           <Accordion className="w-10/12" type="single" collapsible>
             <AccordionItem value="team-role">
               <AccordionTrigger>Team and Role</AccordionTrigger>
               <AccordionContent>
                 <ul>
-                  <li>- Backend developer (Me)</li>
-                  <li>- Another backend developer (My mentor)</li>
-                  <li>- Two frontend developers</li>
+                  <li>- Frontend developer (Me)</li>
+                  <li>- Another frontend developer</li>
+                  <li>- Two senior developers acting as advisors when needed (as we were junior developers)</li>
                   <li>- Project manager</li>
                   <li>- Product owner (external)</li>
                   <li>- UX Developer</li>
@@ -29,23 +29,23 @@ import {
               <AccordionTrigger>My Contributions</AccordionTrigger>
               <AccordionContent>
                 <p>
-                 Created CMS components that were flexible and robust and easy to use for web editors.
+                 As I had a background as backend developer I lead the design of the CMS component structure.
                 </p>
                 <p>
-                  Worked with external APIs to fetch data and convert it into CMS components.
+                  Created easy to use components to give freedom to web editors
                 </p>
                 <Accordion className="mt-4 mx-8" type="single" collapsible>
                   <AccordionItem value="iot">
-                    <AccordionTrigger>IoT</AccordionTrigger>
+                    <AccordionTrigger>Strapi</AccordionTrigger>
                     <AccordionContent>
-                      <p>Due to API changes I got the chance to work with IoT and reading sensor data</p>
-                      <p>Introduced functionality that reads available parking space by reading from sensors and displays it on the site</p>
+                      <p>Set up the whole Strapi CMS architecture</p>
+                      <p>Built a chart builder on top of Strapi CMS using the power of Chart.js</p>
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="apis">
-                    <AccordionTrigger>Working with APIs</AccordionTrigger>
+                    <AccordionTrigger>Mobile first</AccordionTrigger>
                     <AccordionContent>
-                      <p>Rebuilt the waste and water system. The user could in a visually pleasing manner view water consumption. The user could also see history about water/waste and see next waste pickup.</p>
+                      <p>Worked closely with UX designer to create mobile first layouts, using the built-in responsiveness of Tailwind.css</p>
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -55,9 +55,9 @@ import {
               <AccordionTrigger>What my team thought of me</AccordionTrigger>
               <AccordionContent>
                 <ul className="flex flex-col gap-4">
-                  <li>- Good consulting skills.</li>
-                  <li>- Learns quickly and very hungry for knowledge.</li>
-                  <li>- Good communication, easy to work with.</li>
+                  <li>- Delivered features quickly.</li>
+                  <li>- Fun to work with.</li>
+                  <li>- Flexible with customer requirements.</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
