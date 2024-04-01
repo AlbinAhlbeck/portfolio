@@ -12,16 +12,18 @@ const Hero = ({ children, role, description }: HeroProps) => {
         <div className="bg-card-foreground mx-auto border border-gray-600 p-5 rounded-sm min-w-min flex items-center border-bottom text-gray-100 max-w-5xl">
             <div>
                 {React.Children.map(children, (child) => (
-                    <h2 className="text-5xl mb-5">
-                        {child
-                            .split(' ')
-                            .map((word, index) => (
-                                <span key={index} className={index === 2 ? 'text-primary' : ''}>
-                                    {word}{' '}
-                                </span>
-                            ))
-                        }
-                    </h2>
+                    child && typeof child === 'string' && (
+                        <h2 className="text-5xl mb-5">
+                            {child
+                                .split(' ')
+                                .map((word, index) => (
+                                    <span key={index} className={index === 2 ? 'text-primary' : ''}>
+                                        {word}{' '}
+                                    </span>
+                                ))
+                            }
+                        </h2>
+                    )
                 ))}
                 <div className="flex flex-col">
                     <span className="text-gray-300 text-xl">{role}</span>
