@@ -1,0 +1,31 @@
+[
+    {
+      "link": "/businessboard",
+      "title": "Businessboard",
+      "topInfo": "Tietoevry",
+      "badges": ["C#", "Vue.js", "Azure", "Entity framework", "MS SQL"],
+      "description": "Financial reporting application, built for golf clubs but later pivoted to general businesses. Uses integrations to services like GIT (Golf IT), Visma and Fortnox."
+    },
+    {
+      "link": "/vellinge",
+      "title": "Vellinge.se",
+      "topInfo": "Tietoevry",
+      "badges": ["C#", ".NET MVC", "JavaScript", "Optimizely CMS"],
+      "description": "Site with services like My Pages, Selfservice and also IoT integrations with parking sensors and water temperature. Built to be flexible for the customer with the help of Optimizely CMS"
+    },
+    {
+      "link": "/test",
+      "title": "Cooperation Southwestern Skåne",
+      "topInfo": "Tietoevry",
+      "badges": ["Next.js", "Strapi CMS", "Github Actions"],
+      "description": "A joint project between several municipalities in cooperation with the Swedish Public Employment Service. The goal of the project was to enable all stakeholders to share information on one shared website."
+    },
+    {
+      "link": "/p-botten",
+      "title": "P-botten",
+      "topInfo": "Personal",
+      "badges": ["Next.js", "AWS"],
+      "description": "Me and a friend from university are currently building a web service to help make life easier for environmental parking."
+    }
+  ]
+  
