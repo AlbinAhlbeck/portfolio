@@ -30,7 +30,7 @@ const Hero = ({ children, role, description }: HeroProps) => {
             </div>
             <div className="ml-8">
                 <Avatar className="h-32 w-32 lg:h-56 lg:w-56">
-                    <AvatarImage src="/albin2.jpg" />
+                    <AvatarImage src="/nextjs-github-pages/albin2.jpg" />
                 </Avatar>
             </div>
         </div>
