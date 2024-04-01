@@ -18,7 +18,9 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        setNavHeight(isOpen ? menuRef.current.scrollHeight : 0);
+        useEffect(() => {
+            setNavHeight(isOpen ? menuRef.current?.scrollHeight : 0);
+        }, [isOpen]);
     }, [isOpen]);
 
     const menuItems = [
