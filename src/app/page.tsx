@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col items-center p-8 lg:p-24 text-gray-100">
         <div className="w-full text-sm lg:flex">
           <Hero role="Fullstack developer, with expertise in backend"
-            description="I'm a mid-level developer who is growing my skillset quickly due to having a strong passion for what I am doing. I enjoy tinkering with projects in my freetime and enjoy the limitless things there are to learn.">
+            description="I&aposm a mid-level developer who is growing my skillset quickly due to having a strong passion for what I am doing. I enjoy tinkering with projects in my freetime and enjoy the limitless things there are to learn.">
             Hi! I'm Albin
           </Hero>
         </div>
