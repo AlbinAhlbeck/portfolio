@@ -13,14 +13,12 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
     const closeMenu = () => {
-        if(isOpen)
-        setIsOpen(false);
+        if (isOpen)
+            setIsOpen(false);
     };
 
     useEffect(() => {
-        useEffect(() => {
-            setNavHeight(isOpen ? menuRef.current?.scrollHeight : 0);
-        }, [isOpen]);
+        setNavHeight(isOpen ? menuRef.current?.scrollHeight : 0);
     }, [isOpen]);
 
     const menuItems = [
