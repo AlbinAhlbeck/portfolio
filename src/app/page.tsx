@@ -2,6 +2,7 @@ import Hero from "../components/ui/hero";
 import Project from "../components/project";
 import projectsData from "../data/projects.json";
 import ProgressBar from "@/components/progressbar";
+import "../styles/globals.css";
 
 export default function Home() {
   return (

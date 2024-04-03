@@ -13,7 +13,7 @@ type ProjectProps = {
 const Project = ({ children, badges, title, topInfo, link }: ProjectProps) => {
     return (
         <>
-            <Link href={"projects" + link}>
+            <Link href={"/projects" + link}>
                 <div className="bg-card-foreground max-w-lg min-w-fit min-h-56 border border-gray-600 p-5 rounded-sm flex flex-col pl-8 text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out cursor-pointer">
                     {topInfo && <span className="text-gray-300">{topInfo}</span>}
                     <h3 className="text-xl">{title}</h3>
