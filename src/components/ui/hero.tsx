@@ -9,7 +9,7 @@ type HeroProps = {
 
 const Hero = ({ children, role, description }: HeroProps) => {
     return (
-        <div className="mx-auto border border-gray-600 p-5 rounded-sm min-w-min flex items-center border-bottom text-gray-100 max-w-5xl">
+        <div className="mx-auto border border-gray-600 p-5 rounded-sm min-w-min flex items-center border-bottom max-w-5xl">
             <div>
                 {React.Children.map(children, (child) => (
                     child && typeof child === 'string' && (
@@ -26,8 +26,8 @@ const Hero = ({ children, role, description }: HeroProps) => {
                     )
                 ))}
                 <div className="flex flex-col">
-                    <span className="text-gray-300 text-md lg:text-xl">{role}</span>
-                    <span className="text-gray-200 text-sm lg:text-md mt-8">{description}</span>
+                    <span className="text-md lg:text-xl">{role}</span>
+                    <span className="text-sm lg:text-md mt-8">{description}</span>
                 </div>
             </div>
             <div className="ml-8">

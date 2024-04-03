@@ -5,7 +5,7 @@ import ProgressBar from "@/components/progressbar";
 
 export default function Home() {
   return (
-      <div className="flex flex-col items-center p-4 text-gray-100">
+      <div className="flex flex-col items-center p-4">
         <div className="w-full text-sm lg:flex">
           <Hero role="Fullstack developer, with expertise in backend"
             description="I&apos;m a mid-level developer who is growing my skillset quickly due to having a strong passion for what I am doing. I enjoy tinkering with projects in my freetime and enjoy the limitless things there are to learn.">
@@ -18,7 +18,7 @@ export default function Home() {
           I challenge how we are building things and why, always striving for simple solutions to complex problems.
         </div>
         <h2 className="my-8 font-bold text-lg">Projects</h2>
-        <div className="font-mono text-sm items-center flex flex-wrap gap-12 mx-auto justify-center">
+        <div className="text-sm items-center flex flex-wrap gap-12 mx-auto justify-center">
           {projectsData.map((project, index) => (
             <Project key={index} link={project.link} title={project.title} topInfo={project.topInfo} badges={project.badges}>
               {project.description}

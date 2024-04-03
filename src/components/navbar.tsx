@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import Hover from '../components/hover'
+import Hover from '@/components/hover'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav onClick={closeMenu} className="bg-black text-white p-4 font-mono border-b border-primary fixed w-full pb-10 top-0 z-50">
+        <nav onClick={closeMenu} className="bg-black p-4 font-mono border-b border-primary fixed w-full pb-10 top-0 z-50">
             <motion.div
                 initial={false}
                 animate={{ height: navHeight, backgroundColor: "#000" }}
@@ -56,7 +56,7 @@ const Navbar = () => {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.2 }}
-                                className="text-white py-8 px-4 text-xl lg:text-3xl"
+                                className="py-8 px-4 text-xl lg:text-3xl"
                                 ref={menuRef}
                             >
                                 <div className="flex flex-col gap-8 w-fit min-h-full">
@@ -70,8 +70,8 @@ const Navbar = () => {
                                                 className="mb-4 grid grid-cols-2 gap-4 items-center"
                                                 onClick={() => setIsOpen(false)}
                                             >
-                                                <a className="text-white hover:text-gray-300 cursor-pointer">{item.text}</a>
-                                                <span className="text-gray-300 text-sm">{item.description}</span>
+                                                <a className="hover:text-gray-300 cursor-pointer">{item.text}</a>
+                                                <span className="text-sm">{item.description}</span>
                                             </motion.li>
                                         </Link>
                                     ))}
