@@ -1,12 +1,12 @@
-import Hero from "../components/ui/hero";
-import Project from "../components/project";
-import projectsData from "../data/projects.json";
+import Hero from "@/components/ui/hero";
+import Project from "@/components/project";
+import projectsData from "@/data/projects.json";
 import ProgressBar from "@/components/progressbar";
-import "../styles/globals.css";
+import Layout from "./layout";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 font-mono">
+    <Layout>
       <div className="flex flex-col items-center p-8 lg:p-24 text-gray-100">
         <div className="w-full text-sm lg:flex">
           <Hero role="Fullstack developer, with expertise in backend"
@@ -45,8 +45,7 @@ export default function Home() {
             <ProgressBar description="I am creative person so I like to make things look pretty so HTML and CSS have always been very fun for me. I have not had any issues with fullfilling a design given to me from a UX/UI designer." label="HTML & CSS" progress={70} />
           </div>
         </div>
-
       </div>
-    </main>
+    </Layout>
   );
 }

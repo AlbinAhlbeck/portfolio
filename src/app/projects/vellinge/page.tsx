@@ -4,10 +4,11 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion";
+  import Layout from "@/app/layout"
   
   export default function ProjectPage() {
     return (
-      <main className="min-h-screen bg-zinc-950 text-gray-100 pt-12 font-mono">
+      <Layout>
         <div className="flex flex-col items-center min-w-fit">
           <h1 className="text-2xl mb-8">Vellinge</h1>
           <p className="mx-8 max-w-4xl">This project had many external integrations as well a in-house custom form tools that I worked with. It used .NET MVC Pages so I had the chance to work a lot with HTML. This is what later made me want to dive deeper into frontend development</p>
@@ -63,7 +64,7 @@ import {
             </AccordionItem>
           </Accordion>
         </div>
-      </main>
+      </Layout>
     );
   }
   

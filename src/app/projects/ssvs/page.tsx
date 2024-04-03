@@ -4,10 +4,11 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion";
+  import Layout from "@/app/layout"
   
   export default function ProjectPage() {
     return (
-      <main className="min-h-screen bg-zinc-950 text-gray-100 pt-12 font-mono">
+      <Layout>
         <div className="flex flex-col items-center min-w-fit">
           <h1 className="text-2xl mb-8">Cooperation Southwestern Skåne</h1>
           <p className="mx-8 max-w-4xl">This is the project where I learned Next.js and React.js. I had not previously worked with these frameworks. But me and my manager were confident it would not be a problem. We delivered great quality on a tight deadline and the customer was delighted.</p>
@@ -63,7 +64,7 @@ import {
             </AccordionItem>
           </Accordion>
         </div>
-      </main>
+      </Layout>
     );
   }
   

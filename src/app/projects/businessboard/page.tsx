@@ -5,9 +5,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import Layout from "@/app/layout"
+
 export default function ProjectPage() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-gray-100 pt-12 font-mono">
+    <Layout>
       <div className="flex flex-col items-center min-w-fit">
         <h1 className="text-2xl mb-8">Businessboard</h1>
         <p className="mx-12 mb-8 max-w-4xl">The customer of this project was a startup with two founders and they sprints lined up one after another and I enjoyed this quick pace. I joined the project a few years later after it had first started and it was challenging to learn due to tech debt. But in some way I enjoyed being apart of not so pristine project as I gave me a fun challenge to make it better.</p>
@@ -73,6 +75,6 @@ export default function ProjectPage() {
           </AccordionItem>
         </Accordion>
       </div>
-    </main>
+    </Layout>
   );
 }
