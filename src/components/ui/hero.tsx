@@ -34,6 +34,12 @@ const Hero = ({ children, role, description }: HeroProps) => {
                 <Avatar className="h-32 w-32 lg:h-56 lg:w-56 outline outline-primary">
                     <AvatarImage src="/albin2.jpg" />
                 </Avatar>
+                <div className="flex flex-col gap-1 mt-4 text-nowrap">
+                <span><b>Current role: </b>Software developer at <a href="https://www.tietoevry.com/en/create/" className="text-purple-900">Tietoevry Create</a></span>
+                    <span><b>Location:</b> <span className="text-primary">Malmö</span>, Sweden</span>
+                    <span><b>Born:</b> 2000</span>
+                    <span><b>Languages:</b> English and Swedish</span>
+                </div>
             </div>
         </div>
     );
