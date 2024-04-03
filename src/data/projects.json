@@ -17,7 +17,7 @@
       "link": "/ssvs",
       "title": "Cooperation Southwestern Skåne",
       "topInfo": "Tietoevry",
-      "badges": ["Next.js", "Strapi CMS", "Github Actions"],
+      "badges": ["Next.js", "Typescript", "Strapi CMS", "Github Actions"],
       "description": "A joint project between several municipalities in cooperation with the Swedish Public Employment Service. The goal of the project was to enable all stakeholders to share information on one shared website."
     },
     {

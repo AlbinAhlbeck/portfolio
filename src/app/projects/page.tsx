@@ -1,10 +1,8 @@
 import Project from "@/components/project";
 import projectsData from "@/data/projects.json"
-import Layout from "@/app/layout"
 
 export default function Projects() {
   return (
-    <Layout>
       <div className="flex flex-col items-center p-24 mb-89 min-w-fit">
       <div className="font-mono text-sm items-center flex flex-wrap gap-12 mx-auto justify-center">
           {projectsData.map((project, index) => (
@@ -14,6 +12,5 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </Layout>
   );
 }

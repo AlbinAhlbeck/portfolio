@@ -5,14 +5,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import Layout from "@/app/layout"
-
 export default function ProjectPage() {
   return (
-    <Layout>
       <div className="flex flex-col items-center min-w-fit">
         <h1 className="text-2xl mb-8">Businessboard</h1>
-        <p className="mx-12 mb-8 max-w-4xl">The customer of this project was a startup with two founders and they sprints lined up one after another and I enjoyed this quick pace. I joined the project a few years later after it had first started and it was challenging to learn due to tech debt. But in some way I enjoyed being apart of not so pristine project as I gave me a fun challenge to make it better.</p>
+        <p className="mx-12 mb-8 max-w-4xl">The customer of this project was a startup with two founders and there was always features sitting in the backlog. I joined the project a few years later after it had first started and it was challenging to learn due to tech debt. But in some way I enjoyed being apart of not so pristine project as I gave me a fun challenge to make it better.</p>
         <Accordion className="bg-ring w-10/12" type="single" collapsible>
           <AccordionItem value="team-role">
             <AccordionTrigger>Team and Role</AccordionTrigger>
@@ -51,13 +48,15 @@ export default function ProjectPage() {
                 <AccordionItem value="sie-imports">
                   <AccordionTrigger>SIE Imports</AccordionTrigger>
                   <AccordionContent>
-                    <p>Worked alot of imports of SIE (financial file format with transactions etc). Always thinking about optimizing the code as the files could be very large.</p>
+                    <p>Worked alot with of file imports of SIE, csv and excel files. Always thinking about optimizing the code as the files could be very large.
+                      I learned how it is important to batch database calls to improve performance.
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="azure-costs">
                   <AccordionTrigger>Optimized cost and speed in database</AccordionTrigger>
                   <AccordionContent>
-                    <p>In Azure I noticed we had a large database. Found a way to compress data by not saving every row per day (the day information was redundant). Changed so it saved every distinct type per month instead, saved a very large amount of space, and make the application faster</p>
+                    <p>In Azure I noticed we had a large database. Found a way to compress data by not saving every row per day (the day information was redundant). Changed so it saved every distinct type per month instead, saved a very large amount of space, and made the application faster</p>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -75,6 +74,5 @@ export default function ProjectPage() {
           </AccordionItem>
         </Accordion>
       </div>
-    </Layout>
   );
 }

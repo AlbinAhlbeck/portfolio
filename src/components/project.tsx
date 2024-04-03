@@ -1,3 +1,5 @@
+"use client"
+
 import React, { ReactNode } from "react";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link"
@@ -15,11 +17,11 @@ const Project = ({ children, badges, title, topInfo, link }: ProjectProps) => {
         <>
             <Link href={"/projects" + link}>
                 <div className="bg-card-foreground max-w-lg min-w-fit min-h-56 border border-gray-600 p-5 rounded-sm flex flex-col pl-8 text-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out cursor-pointer">
-                    {topInfo && <span className="text-gray-300">{topInfo}</span>}
+                    {topInfo && <span className="text-primary">{topInfo}</span>}
                     <h3 className="text-xl">{title}</h3>
-                    <div className="flex gap-2 items-center text-primary flex my-2 text-nowrap">
+                    <div className="flex gap-4 items-center text-primary flex my-2 text-nowrap">
                         {badges && badges.map((badge, index) => (
-                            <Badge key={index} className="outline text-gray-100">{badge}</Badge>
+                            <Badge key={index} variant="secondary" className="bg-primary text-black">{badge}</Badge>
                         ))}
                     </div>
                     <div>
