@@ -19,7 +19,7 @@ export default function Layout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className="pt-24 min-h-screen font-mono bg-background text-black">
+        <main className="pt-24 min-h-screen font-opensans bg-background text-black">
           {children}
         </main>
       </body>

@@ -21,7 +21,7 @@ const Project = ({ children, badges, title, topInfo, link }: ProjectProps) => {
                     <h3 className="text-xl">{title}</h3>
                     <div className="flex gap-4 items-center text-primary flex my-2 text-nowrap">
                         {badges && badges.map((badge, index) => (
-                            <Badge key={index} variant="secondary" className="bg-primary text-gray-300">{badge}</Badge>
+                            <Badge key={index} variant="secondary" className="bg-primary text-gray-300 hover:text-gray-800">{badge}</Badge>
                         ))}
                     </div>
                     <div>

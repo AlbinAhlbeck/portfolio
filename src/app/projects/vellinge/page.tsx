@@ -9,10 +9,10 @@ import {
     return (
         <div className="flex flex-col items-center min-w-fit">
           <h1 className="text-2xl mb-8">Vellinge</h1>
-          <p className="mx-8 max-w-4xl">This project had many external integrations as well a in-house custom form tools that I worked with. It used .NET MVC Pages so I had the chance to work a lot with HTML. This is what later made me want to dive deeper into frontend development</p>
+          <p className="mx-8 mb-12 max-w-4xl">This project had many external integrations as well a in-house custom form tools that I worked with. It used .NET MVC Pages so I had the chance to work a lot with HTML. This is what later made me want to dive deeper into frontend development</p>
           <Accordion className="w-10/12" type="single" collapsible>
             <AccordionItem value="team-role">
-              <AccordionTrigger>Team and Role</AccordionTrigger>
+              <AccordionTrigger className="text-lg">Team and Role</AccordionTrigger>
               <AccordionContent>
                 <ul>
                   <li>- Backend developer (Me)</li>
@@ -25,7 +25,7 @@ import {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="my-contributions">
-              <AccordionTrigger>My Contributions</AccordionTrigger>
+              <AccordionTrigger className="text-lg">My Contributions</AccordionTrigger>
               <AccordionContent>
                 <p>
                  Created CMS components that were flexible and robust and easy to use for web editors.
@@ -35,14 +35,14 @@ import {
                 </p>
                 <Accordion className="mt-4 mx-8" type="single" collapsible>
                   <AccordionItem value="iot">
-                    <AccordionTrigger>IoT</AccordionTrigger>
+                    <AccordionTrigger className="text-lg">IoT</AccordionTrigger>
                     <AccordionContent>
                       <p>Due to API changes I got the chance to work with IoT and reading sensor data</p>
                       <p>Introduced functionality that reads available parking space by reading from sensors and displays it on the site</p>
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="apis">
-                    <AccordionTrigger>Working with APIs</AccordionTrigger>
+                    <AccordionTrigger className="text-lg">Working with APIs</AccordionTrigger>
                     <AccordionContent>
                       <p>Rebuilt the waste and water system. The user could in a visually pleasing manner view water consumption. The user could also see history about water/waste and see next waste pickup.</p>
                     </AccordionContent>
@@ -51,7 +51,7 @@ import {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="feedback">
-              <AccordionTrigger>What my team thought of me</AccordionTrigger>
+              <AccordionTrigger className="text-lg">What my team thought of me</AccordionTrigger>
               <AccordionContent>
                 <ul className="flex flex-col gap-4">
                   <li>- Good consulting skills.</li>
